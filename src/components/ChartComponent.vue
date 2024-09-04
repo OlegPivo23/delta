@@ -27,10 +27,7 @@ watch(
           xAxis: {
             categories: ['Текущий день', 'Вчера', 'Это день недели'],
             labels: {
-              enabled: true,
-              formatter: function () {
-                return this.value
-              }
+              enabled: false // Отключаем метки на оси X
             },
             tickLength: 5,
             lineWidth: 1
@@ -42,7 +39,7 @@ watch(
             labels: {
               enabled: true,
               formatter: function () {
-                return '•'
+                return '▪' // Используем квадрат вместо кружка
               },
               align: 'right',
               x: 5,
@@ -68,7 +65,8 @@ watch(
           series: [
             {
               name: '',
-              data: newData
+              data: newData,
+              color: '#3f7d66'
             }
           ]
         })
