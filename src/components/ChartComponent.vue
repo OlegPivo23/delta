@@ -27,7 +27,7 @@ watch(
           xAxis: {
             categories: ['Текущий день', 'Вчера', 'Это день недели'],
             labels: {
-              enabled: false // Отключаем метки на оси X
+              enabled: false 
             },
             tickLength: 5,
             lineWidth: 1
@@ -39,7 +39,7 @@ watch(
             labels: {
               enabled: true,
               formatter: function () {
-                return '▪' // Используем квадрат вместо кружка
+                return '▪' 
               },
               align: 'right',
               x: 5,
